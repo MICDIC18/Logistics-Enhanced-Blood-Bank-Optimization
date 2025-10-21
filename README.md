@@ -12,16 +12,16 @@ The project includes:
 - **Comparative analysis** between the base and enhanced models through computational experiments.
 
 ##  Repository Structure
-├── File MOD/
-│ ├── EB.mod # Base AMPL model
-│ ├── EnhancedBlood.mod # Enhanced model with budget constraint and arc minimization
-│
-├── File .dat/
-│ ├── EB.dat # Input data for base model
-│ ├── EnhancedBlood.dat # Input data for enhanced model
-│
-├── logistics_report.pdf # Final project report (includes formulation and results)
-├── README.md # Project documentation
+- **`File MOD/`** — Contains the AMPL model files  
+  - `EB.mod` → Base optimization model  
+  - `EnhancedBlood.mod` → Extended model including budget constraint and arc minimization  
+
+- **`File .dat/`** — Contains the dataset and parameter files used in the models  
+  - `EB.dat` → Input data for the base model  
+  - `EnhancedBlood.dat` → Input data for the enhanced model  
+
+- **`logistics_report.pdf`** — Final project report detailing formulation, implementation, and results  
+- **`README.md`** — Project documentation and repository guide
 
 
 ## Tools and Technologies
