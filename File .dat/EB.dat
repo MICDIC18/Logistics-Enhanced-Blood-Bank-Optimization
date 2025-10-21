@@ -1,0 +1,44 @@
+set hospitals:= Pittsburgh Stauton Charleston Roenoke Richmond Norfolk Suffolk;
+
+set origins:= Pittsburgh Stauton;
+set destinations:= Charleston Roenoke Richmond Norfolk Suffolk;
+
+set links:=
+(Pittsburgh, Charleston)
+(Pittsburgh, Roenoke)
+(Stauton, Charleston)
+(Stauton, Roenoke)
+(Charleston, Roenoke)
+(Roenoke, Charleston)
+(Charleston, Richmond)
+(Charleston, Norfolk)
+(Roenoke, Norfolk)
+(Roenoke, Suffolk)
+(Richmond, Norfolk)
+(Norfolk, Suffolk);
+
+set BloodTypes:= Zero AB;
+
+param cost:=
+Pittsburgh, Charleston 3
+Pittsburgh, Roenoke 4
+Stauton, Charleston 3
+Stauton, Roenoke 3
+Charleston, Roenoke 7
+Roenoke, Charleston 7 
+Charleston, Richmond 9
+Charleston, Norfolk 6
+Roenoke, Norfolk 4
+Roenoke, Suffolk 8
+Richmond, Norfolk 3
+Norfolk, Suffolk 2;
+
+param DemSup:
+                 Zero  AB:=
+Pittsburgh       600   800
+Stauton          500   600
+Charleston       100   200
+Roenoke          100   100
+Richmond         500   300
+Norfolk          200   500
+Suffolk          150   250;
